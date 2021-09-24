@@ -8,9 +8,9 @@ setInterval(() => {
     timeplace.innerHTML = time
 }, 1000);
 
-// setInterval(() => {
-//     getVaccineNotification()
-// }, 1050)
+setInterval(() => {
+    getVaccineNotification()
+}, 1050)
 
 
 async function getVaccineNotification() {
@@ -35,11 +35,11 @@ async function getVaccineNotification() {
                     // console.log(value.available_capacity_dose1);
                     if (value.vaccine == vaccinename) {
                         if (value.available_capacity_dose1 > 0) {
-                            console.log('available');
+                            // console.log('available');
                             vaccinationcenterdata.push(element)
                             break
                         } else {
-                            console.log('not available');
+                            // console.log('not available');
                             // console.log(element)
                         }
                     }
