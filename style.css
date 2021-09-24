@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu+Condensed&display=swap');
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +31,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .form {
@@ -71,9 +68,6 @@ footer {
     text-align: center;
 }
 
-
-
-
 #alert {
     min-height: 60vh;
     /* width: 90%; */
@@ -106,9 +100,9 @@ footer {
     margin: 20px;
 }
 
-.available {
-    /* background: #00fff0; */
-}
+/* .available {
+    background: #00fff0;
+} */
 
 #time {
     font-size: 90%;
@@ -201,7 +195,6 @@ footer {
         font-size: 15px;
         padding: 5px 10px;
     }
-
 
     .form {
         width: 300px;

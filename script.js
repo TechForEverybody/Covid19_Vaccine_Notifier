@@ -12,7 +12,6 @@ setInterval(() => {
     getVaccineNotification()
 }, 1050)
 
-
 async function getVaccineNotification() {
     vaccinationcenterdata = []
     let datetime = new Date()
@@ -69,7 +68,6 @@ async function getVaccineNotification() {
                 <h4>Address : ${value.address} , ${value.block_name} , ${value.district_name} , ${value.state_name} </h4>
                 <h4>Time Slot : ${value.from} to ${value.to}</h4>
                 `
-
                 value.sessions.forEach((value, index) => {
                     // console.log(value);
                     vaccinationdataContainerdata = vaccinationdataContainerdata + `
@@ -88,9 +86,6 @@ async function getVaccineNotification() {
                 vaccinationdataContainerdata = vaccinationdataContainerdata + `</div>`
             })
             alert_container.innerHTML = vaccinationdataContainerdata + `</div>`
-
-
-
         } else {
             // getVaccineNotification()
             alert_container.innerHTML = `
@@ -114,10 +109,6 @@ async function getVaccineNotification() {
 
 getVaccineNotification()
 
-
-
-
-
 async function updatepincode(event) {
     // console.log(event);
     // console.log(event.target.value);
@@ -132,3 +123,27 @@ async function updatevaccinename(event) {
     await getVaccineNotification()
 }
 
+
+document.onkeydown = function (e) {
+    if (e.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey) {
+        return false
+    }
+}
