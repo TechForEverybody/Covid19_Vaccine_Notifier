@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaccine Notifier</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon">
     <script src="./script.js"></script>
 </head>
 
@@ -15,12 +16,13 @@
         <h1>
             Free Covid-19 Vaccine Notifier
         </h1>
-        <span> <div style="text-align:center" id="time">
-            
-        </div></span>
+        <span>
+            <div style="text-align:center" id="time"></div>
+        </span>
     </header>
     <div class="form">
-        <input type="number" name="pincode" id="pincode" onchange="updatepincode(event)" placeholder="Please Enter The Pincode" value="410218">
+        <input type="number" name="pincode" id="pincode" onchange="updatepincode(event)"
+            placeholder="Please Enter The Pincode" value="410218">
         <select name="vaccine" id="vaccine" onchange="updatevaccinename(event)">
             <option value="COVAXIN">COVAXIN</option>
             <option value="COVISHIELD">COVISHIELD</option>
@@ -33,6 +35,7 @@
     <footer>
         All Rights are Reserved
     </footer>
+    <div class="author">Created By : Shivkumar Chauhan</div>
 </body>
 
 </html>
